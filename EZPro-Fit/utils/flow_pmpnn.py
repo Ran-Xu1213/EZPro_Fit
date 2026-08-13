@@ -4,8 +4,7 @@ import torch.nn.functional as F
 import numpy as np
 from typing import Optional, Tuple, Dict, Any
 
-# Import necessary components from your existing files
-# Assuming these are available from the provided code
+
 from .flow_utils import (
     sample_cond_prob_path, 
     simplex_proj, 
