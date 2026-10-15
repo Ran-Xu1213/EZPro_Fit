@@ -13,6 +13,14 @@ By capturing the coupled distribution of structure and coding information, EZPro
 
 ---
 
+## Dataset Description
+
+The dataset comprises protein amino acid sequences, DNA sequences, and associated grouping annotations. The `train_list.csv` file contains **286,146 records** and serves as the source dataset for the training and validation subsets, with the validation subset obtained by partitioning this file. The test dataset, provided in [`test_dataset.csv`](EZPro-Fit/data/test_dataset.csv), contains **9,863 records** and is used for model evaluation. All record counts exclude the CSV header.
+
+Each record contains seven fields: `Entry`, the entry identifier; `Sequence`, the protein amino acid sequence; `dna_sequence`, the DNA sequence; and `50_grouping`, `100_grouping`, `500_grouping`, and `1000_grouping`, which specify group assignments under four grouping configurations.
+
+---
+
 ## 🛠️ Environment Setup & Installation
 
 This project depends on **OpenFold** for structural processing and features. Follow the steps below to set up your environment using the provided `environment.yml`.
