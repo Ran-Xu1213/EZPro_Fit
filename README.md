@@ -15,12 +15,11 @@ By capturing the coupled distribution of structure and coding information, EZPro
 
 ## Dataset Description
 
-The dataset comprises protein amino acid sequences, DNA sequences, and associated grouping annotations. The `train_list.csv` file contains **286,146 records** and serves as the source dataset for the training and validation subsets, with the validation subset obtained by partitioning this file. The test dataset, provided in [`test_dataset.csv`](EZPro-Fit/data/test_dataset.csv), contains **9,863 records** and is used for model evaluation. All record counts exclude the CSV header.
+The dataset contains protein amino acid sequences, DNA sequences, and grouping annotations. `train_list.csv` comprises **286,146 records** and is partitioned into training and validation subsets. `test_dataset.csv` contains **9,863 records** for model evaluation. Counts exclude CSV headers.
 
-Each record contains seven fields: `Entry`, the entry identifier; `Sequence`, the protein amino acid sequence; `dna_sequence`, the DNA sequence; and `50_grouping`, `100_grouping`, `500_grouping`, and `1000_grouping`, which specify group assignments under four grouping configurations.
+Each record includes `Entry`, `Sequence`, `dna_sequence`, and four grouping fields: `50_grouping`, `100_grouping`, `500_grouping`, and `1000_grouping`.
 
-
-Due to its large file size, `train_list.csv` will be hosted on Zenodo. The repository link will be provided here once it becomes available. In the meantime, requests for access to the training data may be directed to [p2314443@mpu.edu.mo](mailto:p2314443@mpu.edu.mo).
+Due to its size, `train_list.csv` will be hosted on Zenodo; the link will be available soon. For access, contact p2314443@mpu.edu.mo.
 
 ---
 
