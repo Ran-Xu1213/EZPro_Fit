@@ -19,6 +19,9 @@ The dataset comprises protein amino acid sequences, DNA sequences, and associate
 
 Each record contains seven fields: `Entry`, the entry identifier; `Sequence`, the protein amino acid sequence; `dna_sequence`, the DNA sequence; and `50_grouping`, `100_grouping`, `500_grouping`, and `1000_grouping`, which specify group assignments under four grouping configurations.
 
+
+Due to its large file size, `train_list.csv` will be hosted on Zenodo. The repository link will be provided here once it becomes available. In the meantime, requests for access to the training data may be directed to [p2314443@mpu.edu.mo](mailto:p2314443@mpu.edu.mo).
+
 ---
 
 ## 🛠️ Environment Setup & Installation
