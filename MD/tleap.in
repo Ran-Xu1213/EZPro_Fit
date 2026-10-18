@@ -1,0 +1,11 @@
+source leaprc.protein.ff14SB
+source leaprc.water.tip3p
+mol = loadpdb cleaned.pdb
+check mol
+solvatebox mol TIP3PBOX 10.0 iso
+addions mol Na+ 0
+addions mol Cl- 0
+check mol
+saveamberparm mol system.prmtop system.inpcrd
+savepdb mol system_solvated.pdb
+quit
